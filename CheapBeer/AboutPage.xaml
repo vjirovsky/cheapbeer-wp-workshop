@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="CheapBeer.AboutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CheapBeer"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot" Margin="19,0,10,0">
+
+        <StackPanel >
+            <TextBlock Text="CheapBeer" Margin="0,0,0,30" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
+            <RichTextBlock TextWrapping="Wrap" FontSize="20">
+                <Paragraph>
+                    Aplikace vytvořená pro workshop na výuku vývoje Windows Phone 8.1 aplikací.
+                    <LineBreak />
+                    <LineBreak />
+                </Paragraph>
+                <Paragraph>Zdrojové kódy na GitHubu:</Paragraph>
+            </RichTextBlock>
+            <HyperlinkButton NavigateUri="https://github.com/vjirovsky/cheapbeer-wp-workshop" FontSize="15" Margin="2,10,2,20"
+                             Foreground="Honeydew">https://github.com/vjirovsky/cheapbeer-wp-workshop</HyperlinkButton>
+            <TextBlock FontSize="15" Foreground="SeaShell" Margin="0,20,0,0">(c) Václav Jirovský</TextBlock>
+            <HyperlinkButton NavigateUri="http://www.vjirovsky.cz" FontSize="15" Margin="2,5,2,20"
+                             Foreground="Honeydew">http://www.vjirovsky.cz</HyperlinkButton>
+        </StackPanel>
+    </Grid>
+</Page>
